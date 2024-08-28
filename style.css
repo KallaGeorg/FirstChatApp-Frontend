@@ -1,0 +1,11 @@
+body{
+    background-color: aquamarine;
+}
+#center{
+    text-align: center;
+}
+#messages{
+    border:solid 1px black;
+    height: 300px;
+    overflow-y: scroll;
+}

@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Beginning</h1>
+    <h1 id="center">First Chat Room</h1>
+    <div>
+        <h4>Username</h4>
+        <input type="text" id="username">
+        <button onclick="connect()">Connect</button>
+    </div>
+    <div id="messages"></div>
+    <div>
+        <textarea id="messageInput" placeholder="Type a message"></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </div>
 </body>
 </html>
